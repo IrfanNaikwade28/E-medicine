@@ -6,7 +6,7 @@ import prod4 from "../assets/products/mobyoga.jpg"
 export const PopularCategories = () => {
     return (
         <>
-            <div className="p-3">
+            <div className="p-3 mt-3">
                 <h1 className="text-xl font-semibold">Popular Categories</h1>
                 <div className="products grid grid-cols-4 gap-x-3 gap-y-4 mt-3">
                     <ProductCard prodImg={prod1} prodTitle={"Vitamins and Nutrition"}/>

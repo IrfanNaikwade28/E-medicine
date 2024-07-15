@@ -5,3 +5,11 @@
 *::-webkit-scrollbar{
     width:0;
 }
+.nav-active{
+    background-color: rgb(255, 233, 233);
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+}
