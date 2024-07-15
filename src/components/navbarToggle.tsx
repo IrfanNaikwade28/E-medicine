@@ -7,7 +7,6 @@ import tw from "../assets/icons/twitter.svg";
 import pint from "../assets/icons/pinterest.svg";
 import yt from "../assets/icons/youtube.svg";
 import { FunctionComponent } from "preact";
-import { useState } from "preact/hooks";
 
 type ToggleProps = {
   display: boolean;
