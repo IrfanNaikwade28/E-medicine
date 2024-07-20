@@ -7,6 +7,8 @@ import { CartCarousel } from "./cartCarousel"
 export const Navbar = () =>{
     const [toggle, setToggle] = useState(false)
     const [cartCaro, setCartCaro] = useState(false)
+    
+
     return(
         <>
             <nav className="w-full h-20 flex justify-between px-5 items-center border-b border-opacity-40">

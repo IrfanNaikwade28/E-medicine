@@ -7,15 +7,23 @@ import tw from "../assets/icons/twitter.svg";
 import pint from "../assets/icons/pinterest.svg";
 import yt from "../assets/icons/youtube.svg";
 import { FunctionComponent } from "preact";
+import { useEffect } from "preact/hooks";
 
 type ToggleProps = {
   display: boolean;
   setToggle: (value: boolean) => void;
 };
 export const NavbarToggle: FunctionComponent<ToggleProps> = (props) => {
+  useEffect(() => {
+    if (props.display) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [props.display]);
   return (
     <div
-      className={`w-full h-full z-50 absolute top-0 bg-white ${
+      className={`w-full h-full z-50 absolute top-0 bg-white overflow-hidden ${
         props.display ? "block" : "hidden"
       }`}
     >

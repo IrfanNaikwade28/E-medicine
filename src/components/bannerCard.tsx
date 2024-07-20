@@ -8,7 +8,7 @@ type BannerCardProps = {
 }
 export const BannerCard:FunctionComponent<BannerCardProps> = (props) =>{
     return(
-        <div className="w-36 h-20 rounded-md overflow-hidden pt-2 pl-5" style={{backgroundImage:`url(${props.imgUrl})`,backgroundPosition:"center",backgroundSize:"cover"}}>
+        <div className="w-1/2 h-auto rounded-md overflow-hidden pt-2 pl-5" style={{backgroundImage:`url(${props.imgUrl})`,backgroundPosition:"center",backgroundSize:"cover"}}>
             <span className="text-white font-semibold">{props.cardHeadText}</span>
             <div className="flex w-full justify-between">
                 <span className="text-white text-xs w-10">{props.cardText}</span>

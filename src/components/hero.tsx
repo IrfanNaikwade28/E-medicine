@@ -37,15 +37,15 @@ export const Hero = () =>{
                     <button className="bg-black text-white text-xs w-28 h-8 rounded-2xl">Order Now</button>
                 </div>
             </div>
-            <div className="HeroSlider px-3 mt-3">
-                <div className="slideContainer w-full h-44 flex flex-col items-center relative">
+            <div className="HeroSlider px-3 my-3">
+                <div className="slideContainer w-full h-auto flex flex-col gap-y-3 items-center">
                     <div className="flex w-full relative">
                     {HeroImages.map((image,index) =>(
-                        <img key={index} src={image} className={`min-w-full ${index === imgIndex ? "block" : "hidden"}`} alt="" />
+                        <img key={index} src={image} className={`w-full ${index === imgIndex ? "block" : "hidden"}`} alt="" />
                     ))
                     }
                     </div>
-                    <div className="flex gap-3 absolute bottom-2">
+                    <div className="flex gap-3">
                         <div className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==0?"bg-orange-600":"bg-gray-300 "}`}></div>
                         <div className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==1?"bg-orange-600":"bg-gray-300 "}`}></div>
                         <div className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==2?"bg-orange-600":"bg-gray-300 "}`}></div>
