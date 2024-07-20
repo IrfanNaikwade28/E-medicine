@@ -63,7 +63,7 @@ export const HealthPackages = () =>{
                     </div>
                 </div>
                 <div className="menu-options mt-4 w-full grid grid-flow-col justify-items-center gap-5 overflow-x-scroll snap-x snap-mandatory">
-                    <div className="snap-center women flex gap-x-2 w-72 h-full">
+                    <div className={`snap-center women flex gap-x-2 w-72 h-full ${healthPack == "For Women"?"flex":"hidden"}`}>
                         <div className="flex flex-col gap-y-1 w-1/3">
                             <div className="w-full">
                                 <img className="w-full h-full" src={a_women} alt="" />
@@ -83,7 +83,7 @@ export const HealthPackages = () =>{
                             <div className="text w-full text-center font-light tracking-wider leading-5">Fitness</div>
                         </div>
                     </div>
-                    <div className="snap-center men flex gap-x-2 w-72 h-full">
+                    <div className={`snap-center men flex gap-x-2 w-72 h-full ${healthPack == "For Men"?"flex":"hidden"}`}>
                         <div className="flex flex-col gap-y-1 w-1/3">
                             <div className="w-full">
                                 <img className="w-full h-full" src={men1} alt="" />
@@ -103,7 +103,27 @@ export const HealthPackages = () =>{
                             <div className="text w-full text-center font-light tracking-wider leading-5">Fitness</div>
                         </div>
                     </div>
-                    <div className="snap-center men flex gap-x-2 w-72 h-full">
+                    <div className={`snap-center women flex gap-x-2 w-72 h-full ${healthPack == "Health Concerns"?"flex":"hidden"}`}>
+                        <div className="flex flex-col gap-y-1 w-1/3">
+                            <div className="w-full">
+                                <img className="w-full h-full" src={a_women} alt="" />
+                            </div>
+                            <div className="text w-full text-center font-light tracking-wider leading-5">Adult Women</div>
+                        </div>
+                        <div className="flex flex-col gap-y-1 w-1/3">
+                            <div className="w-full">
+                                <img className="w-full h-full" src={s_women} alt="" />
+                            </div>
+                            <div className="text w-full text-center font-light tracking-wider leading-5">Senior Women</div>
+                        </div>
+                        <div className="flex flex-col gap-y-1 w-1/3">
+                            <div className="w-full">
+                                <img className="w-full h-full" src={fitness} alt="" />
+                            </div>
+                            <div className="text w-full text-center font-light tracking-wider leading-5">Fitness</div>
+                        </div>
+                    </div>
+                    <div className={`snap-center men flex gap-x-2 w-72 h-full ${healthPack == "Test by Organ"?"flex":"hidden"}`}>
                         <div className="flex flex-col gap-y-1 w-1/3">
                             <div className="w-full">
                                 <img className="w-full h-full" src={men1} alt="" />
@@ -123,42 +143,22 @@ export const HealthPackages = () =>{
                             <div className="text w-full text-center font-light tracking-wider leading-5">Fitness</div>
                         </div>
                     </div>
-                    <div className="snap-center men flex gap-x-2 w-72 h-full">
+                    <div className={`snap-center women flex gap-x-2 w-72 h-full ${healthPack == "Special Test"?"flex":"hidden"}`}>
                         <div className="flex flex-col gap-y-1 w-1/3">
                             <div className="w-full">
-                                <img className="w-full h-full" src={men1} alt="" />
+                                <img className="w-full h-full" src={a_women} alt="" />
                             </div>
-                            <div className="text w-full text-center font-light tracking-wider leading-5">Adult Men</div>
+                            <div className="text w-full text-center font-light tracking-wider leading-5">Adult Women</div>
                         </div>
                         <div className="flex flex-col gap-y-1 w-1/3">
                             <div className="w-full">
-                                <img className="w-full h-full" src={men2} alt="" />
+                                <img className="w-full h-full" src={s_women} alt="" />
                             </div>
-                            <div className="text w-full text-center font-light tracking-wider leading-5">Senior Men</div>
+                            <div className="text w-full text-center font-light tracking-wider leading-5">Senior Women</div>
                         </div>
                         <div className="flex flex-col gap-y-1 w-1/3">
                             <div className="w-full">
-                                <img className="w-full h-full" src={men3} alt="" />
-                            </div>
-                            <div className="text w-full text-center font-light tracking-wider leading-5">Fitness</div>
-                        </div>
-                    </div>
-                    <div className="snap-center men flex gap-x-2 w-72 h-full">
-                        <div className="flex flex-col gap-y-1 w-1/3">
-                            <div className="w-full">
-                                <img className="w-full h-full" src={men1} alt="" />
-                            </div>
-                            <div className="text w-full text-center font-light tracking-wider leading-5">Adult Men</div>
-                        </div>
-                        <div className="flex flex-col gap-y-1 w-1/3">
-                            <div className="w-full">
-                                <img className="w-full h-full" src={men2} alt="" />
-                            </div>
-                            <div className="text w-full text-center font-light tracking-wider leading-5">Senior Men</div>
-                        </div>
-                        <div className="flex flex-col gap-y-1 w-1/3">
-                            <div className="w-full">
-                                <img className="w-full h-full" src={men3} alt="" />
+                                <img className="w-full h-full" src={fitness} alt="" />
                             </div>
                             <div className="text w-full text-center font-light tracking-wider leading-5">Fitness</div>
                         </div>
