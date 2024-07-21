@@ -9,11 +9,15 @@ import fitness from "../assets/fitness.png"
 import men1 from "../assets/diagnostics_2024-06_1719294608_Full+body+packages.png"
 import men2 from "../assets/diagnostics_2024-06_1719294617_Senior+citizen.png"
 import men3 from "../assets/diagnostics_2024-06_1719294633_Physicially+active.png"
+import img1 from "../assets/cff4bdbc-7fcd-4022-86be-d05c0cd0ebd1_1675410638.png"
+import img2 from "../assets/f0095672-debe-43bc-8212-1414cf71b867_1721291472.jpg"
+import img3 from "../assets/a4805cd1-91f2-49a0-92f4-ea02e0f4b12d_1721367340.png"
+import img4 from "../assets/98503b87-dd2e-4d92-903b-c6ae4890bd5f_1721396402.png"
 import { useState } from "preact/hooks"
+import { HeroSlider } from "./heroSlider"
 export const HealthPackages = () =>{
-
+    const healthPackage = [img1,img2,img3,img4]
     const [healthPack,setHealthPack] = useState("For Women")
-
     return (
         <>
             <div className="px-4 my-5">
@@ -165,6 +169,9 @@ export const HealthPackages = () =>{
                     </div>
                 </div>
                 <button className="bg-[#ff5443] text-white font-semibold text-sm w-full h-10 rounded-md mt-5">Explore in {healthPack}</button>
+                <div className="mt-8">
+                    <HeroSlider HeroImages={healthPackage} />
+                </div>
             </div>
         </>
     )
