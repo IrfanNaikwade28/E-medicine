@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 *::-webkit-scrollbar{
     width:0;
@@ -9,6 +11,8 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Figtree", sans-serif;
+    font-style: normal;
 }
 .nav-active{
     background-color: rgb(255, 233, 233);
