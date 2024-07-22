@@ -31,7 +31,7 @@ export const Header = () => {
           <div className="relative w-full">
             <img className="absolute top-3 right-3" src={search} alt="" />
             <input
-              className="border border-black rounded-full w-full h-12 pl-5"
+              className="border border-opacity-50 border-black rounded-full w-full h-12 pl-5 focus-within:outline-none"
               type="text"
               name=""
               id=""

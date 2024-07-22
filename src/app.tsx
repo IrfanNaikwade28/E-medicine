@@ -6,6 +6,7 @@ import { PopularCategories } from "./components/popularCategories";
 import { HealthPackages } from "./components/healthPackages";
 import { CustomHealthPlan } from "./components/customHealthPlan";
 import { HealthCheckup } from "./components/healthCheckup";
+import { HairCareProduct } from "./components/hairCareProduct";
 export function App() {
   return (
     <>
@@ -16,6 +17,7 @@ export function App() {
         <HealthPackages/>
         <CustomHealthPlan/>
         <HealthCheckup/>
+        <HairCareProduct/>
         <StickyNav/>
     </>
   );

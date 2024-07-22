@@ -1,5 +1,6 @@
 import { FunctionComponent } from "preact";
 import ProdImg1 from "../assets/volini.jpg"
+import closeBtn from "../assets/icons/xmark-solid.svg"
 import {CartProduct} from "./cartProduct"
 import { useEffect } from "preact/hooks";
 
@@ -14,24 +15,23 @@ export const CartCarousel: FunctionComponent<ToggleProps> = (props) =>{
         } else {
             document.body.classList.remove("overflow-hidden");
         }
-
-        // Cleanup function to remove the class when the component unmounts or cartCaro changes
         return () => {
             document.body.classList.remove("overflow-hidden");
         };
     }, [props.cartCaro]);
     return (
         <>
-            <div onClick={() => props.setCartCaro(false)} className={`absolute top-0 flex justify-center items-center bg-black bg-opacity-30 w-full h-screen z-40 ${props.cartCaro ? "block overflow-hidden" : "hidden"}`}>
-                <div className="flex flex-col gap-3 w-72 h-80 bg-white z-50 rounded-xl border border-opacity-10 border-solid border-black shadow-md p-4">
-                    <div className="w-full h-4/6 cart-product-list flex flex-col gap-3.5 overflow-y-scroll">
+            <div className={`absolute top-0 flex flex-col justify-center items-center bg-black bg-opacity-30 w-full h-screen z-40 ${props.cartCaro ? "block overflow-hidden" : "hidden"}`}>
+                <div className="relative flex flex-col gap-3 w-72 h-2/3 bg-white z-50 rounded-xl border border-opacity-10 border-solid border-black shadow-md p-4">
+                <button onClick={() => props.setCartCaro(false)} className="absolute top-1 right-1 cursor-pointer"><img src={closeBtn} alt="" /></button>
+                    <div className="w-full h-5/6 mt-6 cart-product-list flex flex-col gap-y-6 overflow-y-scroll">
                         <CartProduct prodImg={ProdImg1} title={"Volini Saridon"} qty={"1"} price={"800.00"}/>
                         <CartProduct prodImg={ProdImg1} title={"Volini Saridon"} qty={"1"} price={"800.00"}/>
                         <CartProduct prodImg={ProdImg1} title={"Volini Saridon"} qty={"1"} price={"800.00"}/>
                         <CartProduct prodImg={ProdImg1} title={"Volini Saridon"} qty={"1"} price={"800.00"}/>
                         <CartProduct prodImg={ProdImg1} title={"Volini Saridon"} qty={"1"} price={"800.00"}/>
                     </div>
-                    <div className="w-full h-1/4 border-t-2 border-opacity-50 flex flex-col">
+                    <div className="w-full h-1/5 border-t-2 border-opacity-50 flex flex-col">
                         <div className="total-price mt-3 px-2 flex justify-between">
                             <span className="text-gray-600 font-bold">Total</span>
                             <span className="text-orange-600 font-bold">$356.00</span>
