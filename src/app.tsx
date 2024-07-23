@@ -7,6 +7,12 @@ import { HealthPackages } from "./components/healthPackages";
 import { CustomHealthPlan } from "./components/customHealthPlan";
 import { HealthCheckup } from "./components/healthCheckup";
 import { HairCareProduct } from "./components/hairCareProduct";
+import { FeatureBrand } from "./components/featureBrand";
+import { FirstAidProducts } from "./components/firstAidProducts";
+import { FitnessPartner } from "./components/fitnessPartner";
+import { TrendingProducts } from "./components/trendingProducts";
+import { NutritionalDrinkProducts } from "./components/NutritionalDrinkProducts";
+import { HealthArticles } from "./components/healthArticles";
 export function App() {
   return (
     <>
@@ -18,6 +24,12 @@ export function App() {
         <CustomHealthPlan/>
         <HealthCheckup/>
         <HairCareProduct/>
+        <FeatureBrand/>
+        <FirstAidProducts/>
+        <FitnessPartner/>
+        <TrendingProducts/>
+        <NutritionalDrinkProducts/>
+        <HealthArticles/>
         <StickyNav/>
     </>
   );

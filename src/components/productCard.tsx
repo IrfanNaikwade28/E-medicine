@@ -1,23 +1,41 @@
 import { FunctionComponent } from "preact";
-
-type ProductCardProps = {
-  prodImg: string;
-  prodTitle: string;
-};
-
-export const ProductCard: FunctionComponent<ProductCardProps> = (props) => {
-  return (
-    <>
-      <div className="product-card  basis-1/4 max-w-24 h-auto flex flex-col gap-y-1 hover:border border-opacity-50 rounded-md hover:shadow-sm overflow-hidden">
-        <div className="prod-pic basis-1/2">
-          <img className="w-full h-full" src={props.prodImg} alt="" />
-        </div>
-        <div className="prod-title basis-1/2 overflow-hidden">
-          <span className="text-xs font-medium flex text-center text-ellipsis">
-            {props.prodTitle}
-          </span>
-        </div>
-      </div>
-    </>
-  );
-};
+import lightning from "../assets/icons/light.png"
+type cardProps = {
+    imgUrl:string;
+    title:string;
+    testCount:string;
+    reportTime:string;
+    discount:string;
+    actualPrice:string;
+    discountPrice:string;
+}
+export const ProductCard:FunctionComponent<cardProps> = (props) => {
+    return(
+        <>
+            <div className="offer-card w-[40vw] max-w-[15rem] flex flex-col gap-y-1 snap-center">
+                    <div className="relative flex justify-center items-center w-full h-1/2 border border-black border-opacity-10 shadow-sm rounded-lg overflow-hidden">
+                            <img className="object-contain relative size-4/5" src={props.imgUrl} alt="" />
+                    </div>
+                    <div className="chekckup-info">
+                            <div className="title font-semibold text-sm line-clamp-2">{props.title}</div>
+                            <div className="test-count text-gray-700 text-xs font-extralight">{props.testCount}</div>
+                    </div>
+                    <div className="price-info grid gap-y-1">
+                            <div className="report-time text-gray-700 text-xs font-extralight flex gap-x-1 truncate ">
+                            Get in<span className="text-[#9D59A8] font-normal truncate">{props.reportTime}</span> <img className="w-3 h-auto" src={lightning} alt="" />
+                            </div>
+                        <div className="prices flex gap-x-1">
+                                <div className="disc-price font-bold text-sm">
+                                    <span>₹</span>{props.discountPrice}
+                                </div>
+                                <div className="actual-price line-through  text-gray-700 text-xs font-extralight">
+                                    <span>₹</span>{props.actualPrice}
+                                </div>
+                                <div className="discount text-green-900 font-bold text-xs flex">{props.discount}% off</div>
+                        </div>
+                        <button className="bg-white border border-black border-opacity-10 h-10 rounded-md font-semibold text-[#ff5443] shadow-sm hover:bg-slate-50">ADD</button>
+                    </div>
+                </div>
+        </>
+    )
+}

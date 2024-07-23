@@ -1,5 +1,6 @@
 import sampleImg from "../assets/products/mobyoga.jpg"
 import { HealthCheckupOfferCard } from "./healthCheckupOfferCard"
+import { Banner } from "./banner"
 import banner1 from "../assets/banner2.jpg"
 import consult from "../assets/Consult.png"
 import arrow from "../assets/icons/arrow.svg"
@@ -18,7 +19,7 @@ export const HealthCheckup = () =>{
                     <img className="w-5 h-5" src={arrow} alt="" />
                 </div>
             </div>
-            <div className="checkup-offers w-screen px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll">
+            <div className="checkup-offers w-screen px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll snap-x snap-mandatory">
                 <HealthCheckupOfferCard imgUrl={sampleImg}
                     title={"Comprehensive Gold Full Body Checkup with Smart Report"}
                     testCount={"Contains 88 tests"}
@@ -55,12 +56,12 @@ export const HealthCheckup = () =>{
                     actualPrice={"2249"}
                     discount={"50"}/>
             </div>
-            <div className="px-4 mt-5 w-full mb-3">
-                    <img className="w-full rounded-lg" src={banner1} alt="" />
+            <div className="px-3">
+            <Banner bannerImg={banner1} />
             </div>
             <div className="monsoon mt-5">
-                <div className="banner w-full max-w-80">
-                    <img className="w-full" src={monsoon} alt="" />
+                <div className="">
+                    <Banner bannerImg={monsoon} />
                 </div>
                 <div className="container px-3 grid grid-cols-2 gap-2 justify-items-center">
                     <div className="w-full max-w-40 grid gap-y-1 justify-items-center">
@@ -80,8 +81,8 @@ export const HealthCheckup = () =>{
                         <span className="text-sm font-medium line-clamp-2">Vaporizers</span>
                     </div>
                 </div>
-                <div className="px-4 mt-5 w-full mb-3">
-                    <img className="w-full rounded-lg" src={consult} alt="" />
+                <div className="px-3">
+                    <Banner bannerImg={consult} />
                 </div>
             </div>
         </>

@@ -1,3 +1,4 @@
+import { Banner } from "./banner"
 import purpleIcon from "../assets/purpleIcon.png"
 import greenIcon from "../assets/greenIcon.png"
 import orangeIcon from "../assets/orangeIcon.png"
@@ -65,8 +66,8 @@ export const CustomHealthPlan = () => {
                             </div>
                     </div>
                 </div>
-                <div className="px-3 mt-10 w-full mb-3">
-                    <img className="w-full" src={banner1} alt="" />
+                <div className="px-3">
+                <Banner bannerImg={banner1} />
                 </div>
             </div>
         </>
