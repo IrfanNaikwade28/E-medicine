@@ -13,6 +13,7 @@ import { FitnessPartner } from "./components/fitnessPartner";
 import { TrendingProducts } from "./components/trendingProducts";
 import { NutritionalDrinkProducts } from "./components/NutritionalDrinkProducts";
 import { HealthArticles } from "./components/healthArticles";
+import { Footer } from "./components/footer";
 export function App() {
   return (
     <>
@@ -30,6 +31,7 @@ export function App() {
         <TrendingProducts/>
         <NutritionalDrinkProducts/>
         <HealthArticles/>
+        <Footer/>
         <StickyNav/>
     </>
   );

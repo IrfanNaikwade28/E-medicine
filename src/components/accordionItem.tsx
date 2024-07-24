@@ -11,10 +11,10 @@ export const AccordionItem:FunctionalComponent<AccordionProps> = ({ title, child
   return (
     <div className="">
       <button
-        className="accordion-header flex justify-between items-center p-4 w-full text-left text-gray-700 font-medium focus:outline-none"
+        className="accordion-header flex justify-between items-center py-4 px-3 w-full text-left text-gray-700 font-medium focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-orange-600">{title}</span>
+        <span className="text-black font-bold">{title}</span>
         <svg
           className={`accordion-icon w-5 h-5 text-gray-500 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
             }`}
@@ -27,7 +27,7 @@ export const AccordionItem:FunctionalComponent<AccordionProps> = ({ title, child
         </svg>
       </button>
       {isOpen && (
-        <div className="accordion-content p-4">
+        <div className="accordion-content py-4 px-3">
           {children}
         </div>
       )}
