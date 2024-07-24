@@ -41,36 +41,36 @@ export const HealthArticles = () => {
           title={"When Should Your Child Get the Flu Vaccine?"}
         />
       </div>
-      <div className="flex gap-x-2 w-full h-fit px-3 mt-10">
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
+      <div className="grid grid-flow-col gap-x-2 w-full h-full px-3 mt-10">
+        <div className="flex flex-col w-full h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
           <div className="img w-10 flex">
             <img className="w-full h-full" src={genuineProducts} alt="" />
           </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
+          <div className="text font-extralight h-3/5 text-xs text-wrap">
             100% genuine products
           </div>
         </div>
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
+        <div className="flex flex-col w-full h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
           <div className="img w-10 flex ">
             <img className="w-full h-full" src={secure} alt="" />
           </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
+          <div className="text font-extralight h-3/5 text-xs text-wrap">
             Safe & secure payments
           </div>
         </div>
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
+        <div className="flex flex-col w-full h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
           <div className="img w-10 flex ">
             <img className="w-full h-full" src={contact} alt="" />
           </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
+          <div className="text font-extralight h-3/5 text-xs text-wrap">
             No contact delivery
           </div>
         </div>
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
+        <div className="flex flex-col w-full h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
           <div className="img w-10 flex ">
             <img className="w-full h-full" src={sanitized} alt="" />
           </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
+          <div className="text font-extralight h-3/5 text-xs text-wrap">
             Fully sanitized workforce
           </div>
         </div>
