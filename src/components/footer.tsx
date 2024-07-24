@@ -1,8 +1,5 @@
 import { AccordionItem } from "./accordionItem";
-import genuineProducts from "../assets/genuineProducts.png";
-import secure from "../assets/securePayment.png";
-import contact from "../assets/contactDelivery.png";
-import sanitized from "../assets/sanitizedWorkforce.png";
+
 import tata1mg from "../assets/icons/tata1mg.svg";
 import legitscript from "../assets/729605.png";
 import isoCertify from "../assets/iso_certification_03_07_2024.jpg";
@@ -13,40 +10,7 @@ import tataLogo from "../assets/icons/tataLogo.svg"
 export const Footer = () => {
   return (
     <>
-      <div className="flex gap-x-2 w-full h-fit px-3 mt-10">
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
-          <div className="img w-10 flex ">
-            <img className="w-full h-full" src={genuineProducts} alt="" />
-          </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
-            100% genuine products
-          </div>
-        </div>
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
-          <div className="img w-10 flex ">
-            <img className="w-full h-full" src={secure} alt="" />
-          </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
-            Safe & secure payments
-          </div>
-        </div>
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
-          <div className="img w-10 flex ">
-            <img className="w-full h-full" src={contact} alt="" />
-          </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
-            No contact delivery
-          </div>
-        </div>
-        <div className="flex flex-col w-1/4 h-full bg-[#f0f2f5] rounded-md p-2 gap-y-1">
-          <div className="img w-10 flex ">
-            <img className="w-full h-full" src={sanitized} alt="" />
-          </div>
-          <div className="text font-extralight h-3/5 text-xs flex flex-wrap">
-            Fully sanitized workforce
-          </div>
-        </div>
-      </div>
+
       <div className="w-full flex flex-col gap-y-1 mt-10 px-3">
         <div className="logo flex justify-center">
           <img src={tata1mg} alt="" />
@@ -151,7 +115,7 @@ export const Footer = () => {
           </AccordionItem>
         </div>
       </div>
-      <div className="flex flex-col px-3">
+      <div className="flex flex-col px-3 mt-10">
         <div className="flex justify-center">
           <img src={tataLogo} alt="" />
         </div>
