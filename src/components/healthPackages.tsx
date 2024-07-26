@@ -168,7 +168,7 @@ export const HealthPackages = () =>{
                         </div>
                     </div>
                 </div>
-                <button className="bg-[#ff5443] text-white font-semibold text-sm w-full h-10 rounded-md mt-5">Explore in {healthPack}</button>
+                <button className="bg-[#ff5443] text-white font-semibold text-sm w-full h-10 rounded-md mt-5 hover:bg-[#f05244]">Explore in {healthPack}</button>
                 <div className="mt-8">
                     <HeroSlider HeroImages={healthPackage} />
                 </div>

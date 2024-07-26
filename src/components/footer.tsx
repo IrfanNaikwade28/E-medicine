@@ -1,5 +1,4 @@
 import { AccordionItem } from "./accordionItem";
-
 import tata1mg from "../assets/icons/tata1mg.svg";
 import legitscript from "../assets/729605.png";
 import isoCertify from "../assets/iso_certification_03_07_2024.jpg";

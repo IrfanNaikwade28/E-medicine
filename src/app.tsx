@@ -1,38 +1,50 @@
-import {Navbar} from "./components/navbar"
-import {Header} from "./components/header"
-import { Hero } from "./components/hero";
-import {StickyNav} from "./components/stickyNav"
-import { PopularCategories } from "./components/popularCategories";
-import { HealthPackages } from "./components/healthPackages";
-import { CustomHealthPlan } from "./components/customHealthPlan";
-import { HealthCheckup } from "./components/healthCheckup";
-import { HairCareProduct } from "./components/hairCareProduct";
-import { FeatureBrand } from "./components/featureBrand";
-import { FirstAidProducts } from "./components/firstAidProducts";
-import { FitnessPartner } from "./components/fitnessPartner";
-import { TrendingProducts } from "./components/trendingProducts";
-import { NutritionalDrinkProducts } from "./components/NutritionalDrinkProducts";
-import { HealthArticles } from "./components/healthArticles";
-import { Footer } from "./components/footer";
+import { StickyNav } from "./components/stickyNav";
+import { Home } from "./components/Home/home";
+import { Health } from "./components/Health/health";
+import { Care } from "./components/Care/care";
+import { Lab } from "./components/Lab/lab";
+import { Profile } from "./components//Profile/profile";
+
+import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+
+const Layout = () => (
+  <div>
+    <Outlet />
+    <StickyNav />
+  </div>
+);
 export function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+    element: <Layout />,
+    children:[
+      {
+        path:"/",
+        element:<Home/>
+      },
+      {
+        path:"/Health",
+        element:<Health/>
+      },
+      {
+        path:"/Care",
+        element:<Care/>
+      },
+      {
+        path:"/Lab",
+        element:<Lab/>
+      },
+      {
+        path:"/Profile",
+        element:<Profile/>
+      }
+    ]
+    }
+  ]);
   return (
     <>
-        <Navbar/>
-        <Header/>
-        <Hero/>
-        <PopularCategories/>
-        <HealthPackages/>
-        <CustomHealthPlan/>
-        <HealthCheckup/>
-        <HairCareProduct/>
-        <FeatureBrand/>
-        <FirstAidProducts/>
-        <FitnessPartner/>
-        <TrendingProducts/>
-        <NutritionalDrinkProducts/>
-        <HealthArticles/>
-        <Footer/>
-        <StickyNav/>
+        <RouterProvider router={router}/>
     </>
   );
 }

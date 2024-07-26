@@ -1,37 +1,49 @@
+import { Link, useLocation } from "react-router-dom";
 import HomeIcon from "../assets/icons/home.svg";
 import HealthIcon from "../assets/icons/doctor.svg";
-import CareIcon from "../assets/icons/message.svg";
+import CareIcon from "../assets/Care_plan_gif.gif";
 import LabIcon from "../assets/icons/lab.svg";
 import ProfileIcon from "../assets/icons/profile.svg";
-import { useState } from "preact/hooks";
+
 export const StickyNav = () => {
-  const [active,setActive] = useState('Home')
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  const getActiveClass = (path: string) => (currentPath === path && path !== "/Care" ? "nav-active" : "");
+
   return (
-    <>
-      <div className="sticky z-20 border-t border-opacity-50 bottom-0 bg-white w-full h-20 flex items-center justify-center">
-        <div className="Nav-items w-full h-3/4 flex justify-center items-center gap-x-1 px-2 sm:gap-x-3 md:gap-x-5">
-          <button className={`flex flex-col justify-center items-center h-full gap-1 w-full ${active === 'Home' ? 'nav-active' : ''}`} onClick={() => setActive('Home')} value='Home'>
-            <img src={HomeIcon} alt="" />
+    <div className="fixed z-20 border-t border-opacity-50 bottom-0 bg-white w-full h-20 flex items-center justify-center">
+      <div className="Nav-items w-full h-3/4 flex justify-center items-center gap-x-1 px-1 sm:gap-x-3 md:gap-x-5">
+        <button className={`h-full w-full ${getActiveClass("/")}`}>
+          <Link className="flex flex-col justify-center items-center gap-1" to="/">
+            <img src={HomeIcon} alt="Home" />
             <span className="text-xs text-gray-400">Home</span>
-          </button>
-          <button className={`flex flex-col justify-center items-center h-full gap-1 w-full ${active === 'Health' ? 'nav-active' : ''}`} onClick={() => setActive('Health')}  value='Health'>
-            <img src={HealthIcon} alt="" />
+          </Link>
+        </button>
+        <button className={`h-full w-full ${getActiveClass("/Health")}`}>
+          <Link className="flex flex-col justify-center items-center gap-1" to="/Health">
+            <img src={HealthIcon} alt="Health" />
             <span className="text-xs text-gray-400">Health</span>
-          </button>
-          <button className={`flex flex-col justify-center items-center h-full gap-1 w-full ${active === 'Care' ? 'nav-active' : ''}`} onClick={() => setActive('Care')}  value='Care'>
-            <img src={CareIcon} alt="" />
-            <span className="text-xs text-gray-400">Care Plan</span>
-          </button>
-          <button className={`flex flex-col justify-center items-center h-full gap-1 w-full ${active === 'Lab' ? 'nav-active' : ''}`} onClick={() => setActive('Lab')}  value='Lab'>
-            <img src={LabIcon} alt="" />
+          </Link>
+        </button>
+        <button className={`h-full w-full ${getActiveClass("/Care")}`}>
+          <Link className="flex flex-col justify-center items-center gap-1" to="/Care">
+            <img className="size-14" src={CareIcon} alt="Care" />
+          </Link>
+        </button>
+        <button className={`h-full w-full ${getActiveClass("/Lab")}`}>
+          <Link className="flex flex-col justify-center items-center gap-1" to="/Lab">
+            <img src={LabIcon} alt="Lab Test" />
             <span className="text-xs text-gray-400">Lab Test</span>
-          </button>
-          <button className={`flex flex-col justify-center items-center h-full gap-1 w-full ${active === 'Profile' ? 'nav-active' : ''}`} onClick={() => setActive('Profile')} value='Profile'>
-            <img src={ProfileIcon} alt="" />
+          </Link>
+        </button>
+        <button className={`h-full w-full ${getActiveClass("/Profile")}`}>
+          <Link className="flex flex-col justify-center items-center gap-1" to="/Profile">
+            <img src={ProfileIcon} alt="Profile" />
             <span className="text-xs text-gray-400">Profile</span>
-          </button>
-        </div>
+          </Link>
+        </button>
       </div>
-    </>
+    </div>
   );
 };
