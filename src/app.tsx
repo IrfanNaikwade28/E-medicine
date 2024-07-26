@@ -9,7 +9,9 @@ import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
 
 const Layout = () => (
   <div>
-    <Outlet />
+    <div className="pb-20">
+      <Outlet />
+    </div>
     <StickyNav />
   </div>
 );
