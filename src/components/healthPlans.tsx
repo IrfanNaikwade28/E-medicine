@@ -14,7 +14,7 @@ export const HealthPlans = () =>{
                     Most upvoted plans, sessions and articles for you!
                 </div>
             </div>
-            <div className="w-screen px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll snap-x snap-mandatory">
+            <div className="w-full px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll snap-x snap-mandatory">
                 <HealthPlanTag tagName={"Diabetes"}/>
                 <HealthPlanTag tagName={"Insurance"}/>
                 <HealthPlanTag tagName={"Surgical care"}/>

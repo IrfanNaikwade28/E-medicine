@@ -10,7 +10,7 @@ export const FirstAidProducts = () =>{
             <div className="Banner">
                 <Banner bannerImg={firstAidBanner} />
             </div>
-            <div className="checkup-offers w-screen px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll snap-x snap-mandatory">
+            <div className="checkup-offers w-full px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll snap-x snap-mandatory">
             <ProductCard imgUrl={product1}
                     title={"Tata 1mg First Aid Kit"}
                     testCount={"1 Kit"}

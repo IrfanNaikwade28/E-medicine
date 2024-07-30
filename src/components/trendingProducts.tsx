@@ -14,7 +14,7 @@ export const TrendingProducts = () =>{
                     <img className="w-5 h-5" src={arrow} alt="" />
                 </div>
             </div>
-            <div className="checkup-offers w-screen px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll snap-x snap-mandatory">
+            <div className="checkup-offers w-full px-3 mt-3 grid grid-flow-col gap-x-3 overflow-x-scroll snap-x snap-mandatory">
             <ProductCard imgUrl={ceraVe}
                     title={"CeraVe Foaming Cleanser for Normal & Oily Skin"}
                     testCount={"80 ml Cleanser"}

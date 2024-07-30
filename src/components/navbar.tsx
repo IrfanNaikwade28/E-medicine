@@ -1,4 +1,5 @@
 import { useState } from "preact/hooks"
+import { Link } from "react-router-dom"
 import menuIcon from "../assets/icons/nav-menu.svg"
 import backBtnIcon from "../assets/icons/arrow-left.svg"
 import cartIcon from "../assets/icons/cart.svg"
@@ -22,8 +23,10 @@ export const Navbar:FunctionComponent<NavbarProps> = (props) =>{
                 {
                     props.setSearchAndBackBtn ?
                     <div className="menu-toggle flex justify-center items-center bg-[#f0f2f5] rounded-full size-10">
-                        <img onClick={() => ''} src={backBtnIcon} alt="" />
-                    </div>:
+                        <Link to="/">
+                            <img onClick={() => ''} src={backBtnIcon} alt="" />
+                        </Link>
+                    </div> :
                     <div className="menu-toggle flex justify-center items-center bg-[#f0f2f5] rounded-full size-10">
                         <img onClick={() => setToggle(!toggle)} src={menuIcon} alt="" />
                     </div>

@@ -11,7 +11,7 @@ export const HealthArticles = () => {
   return (
     <>
       <div className="font-bold text-base px-3 mt-10">Health articles</div>
-      <div className="checkup-offers w-screen px-3 mt-3 grid grid-flow-col gap-x-2 overflow-x-scroll snap-x snap-mandatory">
+      <div className="checkup-offers w-full px-3 mt-3 grid grid-flow-col gap-x-2 overflow-x-scroll snap-x snap-mandatory">
         <HealthArticlesCard
           healthImg={articleImg}
           title={"Dengue Alert: What You Need To Know This Season"}
