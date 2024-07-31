@@ -1,18 +1,22 @@
 import { Navbar } from "../navbar"
 import { CarePlan } from "../carePlan"
-import { FloatingSubscriptionBar } from "../floatingSubscriptionBar"
 import { CarePlanCardContainer } from "../carePlanCardContainer"
-import { Footer } from "../footer"
+import { CustomerCount } from "../customerCount"
+import { Testimonials } from "../testimonials"
 import { FAQ } from "../faq"
+import { Footer } from "../footer"
+import { FloatingSubscriptionBar } from "../floatingSubscriptionBar"
 export const Care = () =>{
     return (
         <>
             <Navbar setSearchAndBackBtn={true} isSticky={true}/>
             <CarePlan/>
-            <FloatingSubscriptionBar/>
             <CarePlanCardContainer/>
+            <CustomerCount/>
+            <Testimonials/>
             <FAQ/>
             <Footer/>
+            <FloatingSubscriptionBar/>
         </>
     )
 }

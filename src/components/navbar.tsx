@@ -15,7 +15,6 @@ type NavbarProps = {
 export const Navbar:FunctionComponent<NavbarProps> = (props) =>{
     const [toggle, setToggle] = useState(false)
     const [cartCaro, setCartCaro] = useState(false)
-    
 
     return(
         <>

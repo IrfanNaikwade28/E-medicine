@@ -21,9 +21,9 @@ export const CartCarousel: FunctionComponent<ToggleProps> = (props) =>{
     }, [props.cartCaro]);
     return (
         <>
-            <div className={`absolute top-0 flex flex-col justify-center items-center bg-black bg-opacity-30 w-full h-screen z-40 ${props.cartCaro ? "block overflow-hidden" : "hidden"}`}>
+            <div className={`fixed top-0 flex flex-col justify-center items-center bg-black bg-opacity-30 w-full h-full z-50 ${props.cartCaro ? "block overflow-hidden" : "hidden"}`}>
+                <button onClick={() => props.setCartCaro(false)} className="absolute top-10 size-6 p-1 right-1 cursor-pointer bg-[#ea580c] rounded-full"><img src={closeBtn} alt="" /></button>
                 <div className="relative flex flex-col gap-3 w-72 h-3/4 bg-white z-50 rounded-lg border border-opacity-10 border-solid border-black shadow-md p-4">
-                <button onClick={() => props.setCartCaro(false)} className="absolute top-2 right-2 cursor-pointer"><img src={closeBtn} alt="" /></button>
                     <div className="w-full h-5/6 mt-6 cart-product-list flex flex-col gap-y-6 overflow-y-scroll">
                         <CartProduct prodImg={ProdImg1} title={"Volini Saridon"} qty={"1"} price={"800.00"}/>
                         <CartProduct prodImg={ProdImg1} title={"Volini Saridon"} qty={"1"} price={"800.00"}/>
