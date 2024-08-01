@@ -1,7 +1,5 @@
-import { useState } from "preact/hooks";
 
 export const RangeComponent = () =>{
-  const [range, setRange] = useState("20");
 
     return (
         <>

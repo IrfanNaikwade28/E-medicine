@@ -1,10 +1,12 @@
-
+import { Navbar } from "../navbar"
+import { Header } from "../header"
+import { LabTest } from "../labTest"
 export const Lab = () =>{
     return (
         <>
-            <div className="w-full h-screen">
-            Lab Page
-            </div>
+            <Navbar setSearchAndBackBtn={false} isSticky={true} />
+            <Header setSerachBarIsVisible={false}  />
+            <LabTest/>
         </>
     )
 }

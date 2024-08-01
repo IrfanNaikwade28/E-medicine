@@ -5,7 +5,7 @@ interface CustomerCountProps{
     className?:string;
 }
 
-export const CustomerCount:FunctionComponent<CustomerCountProps> = (className) => {
+export const CustomerCount:FunctionComponent<CustomerCountProps> = () => {
   const [count, setCount] = useState<number>(1530300);
   useEffect(() => {
     const interval = setInterval(() => {

@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { FunctionalComponent, h } from 'preact';
+import { FunctionalComponent } from 'preact';
 
 interface AccordionProps {
     title: string;

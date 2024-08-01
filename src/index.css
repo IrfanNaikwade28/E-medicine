@@ -30,8 +30,8 @@ html,body{
     z-index: 1000;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: popIn 1s ;
-    -webkit-animation: popIn 1s ;
+    animation: popIn 1s;
+    -webkit-animation: popIn 1s;
 }
 @keyframes popIn{
     from{
@@ -49,6 +49,4 @@ html,body{
         -o-transform:translateY(0px)    ;
 }
 }
-
-
 /* https://github.com/Agrawalenis/Onlinemedicinefrontend_desktop */
