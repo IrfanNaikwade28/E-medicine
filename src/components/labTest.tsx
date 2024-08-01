@@ -12,8 +12,10 @@ export const LabTest = () =>{
     return(
         <>
             <div className="mt-3 text-2xl font-bold text-wrap tracking-wider mx-4">Lab tests & health checkups</div>
-            <div className="w-full px-4 mt-3">
-                <input type="text" className="w-full h-9 border border-black pl-3 rounded-[4px]" placeholder={`Search '${searchPlaceholderWords[word]}'`}/>
+            <div className="px-4">
+                <div className="w-full mt-3 h-9 border border-black rounded-[4px] flex items-center max-w-[30rem]">
+                    <input type="text" className="w-full pl-3 focus-within:outline-none" placeholder={`Search '${searchPlaceholderWords[word]}'`}/>
+                </div>
             </div>
         </>
     )

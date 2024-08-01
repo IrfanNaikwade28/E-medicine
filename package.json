@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.9",
-    "framer-motion": "^11.3.19",
     "preact": "^10.23.1",
     "react-router-dom": "^6.25.1"
   },
