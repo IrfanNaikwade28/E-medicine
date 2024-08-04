@@ -10,7 +10,6 @@ import { HeroSlider } from "./heroSlider";
 
 export const Hero = () =>{
     const HeroImages = [acidity,consult,acidity,consult];
-    
     return(
         <>
             <div className="flex gap-3 px-3 mt-3 justify-center">
