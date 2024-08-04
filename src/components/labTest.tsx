@@ -47,7 +47,7 @@ export const LabTest = () => {
           <input
             type="text"
             onChange={(e) => handleSearchWords(e)}
-            className="w-full pl-3 focus-within:outline-none"
+            className="w-full pl-3 focus-within:outline-none accent-black"
             placeholder="Search "
           />
           <div
