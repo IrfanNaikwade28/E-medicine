@@ -34,7 +34,7 @@ export const FeverScreeningPackageCard:FunctionComponent<cardProps> = (props) =>
                             <div className="discount text-green-900 font-bold text-base flex">{props.discount}% off</div>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center py-1 rounded-[4px] w-full border-2 border-red-500 text-red-500 bg-white hover:bg-red-500 hover:text-white font-semibold">Book</div>
+                    <div className="flex justify-center items-center py-1 rounded-[4px] w-full border border-red-500 text-red-500 bg-white hover:bg-red-500 hover:text-white font-semibold">Book</div>
                 </div>
         </>
     )

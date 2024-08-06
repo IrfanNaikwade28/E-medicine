@@ -7,14 +7,8 @@
 *::-webkit-scrollbar{
     width:0;
     display: none;
-}
-*{
-    padding: 0;
-    margin: 0;
-}
-html,body{
     font-family: "Figtree", sans-serif;
-    font-style: normal;
+    font-style:normal;
 }
 .nav-active{
     background-color: rgb(255, 233, 233);
