@@ -23,7 +23,7 @@ export const NavbarToggle: FunctionComponent<ToggleProps> = (props) => {
   }, [props.display]);
   return (
     <div
-      className={`w-full h-full z-50 absolute top-0 bg-white overflow-hidden ${
+      className={`w-full h-full z-50 fixed top-0 bg-white overflow-hidden ${
         props.display ? "block" : "hidden"
       }`}
     >
