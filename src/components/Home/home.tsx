@@ -17,7 +17,7 @@ import { Footer } from "../footer";
 export const Home = () =>{
     return(
         <>
-        <Navbar setSearchAndBackBtn={false} isSticky={false} />
+        <Navbar setSearchAndBackBtn={false} isSticky={false} setCartBtn={true} />
         <Header setSerachBarIsVisible={true}  />
         <Hero/>
         <PopularCategories/>

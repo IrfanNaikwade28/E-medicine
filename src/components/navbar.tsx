@@ -11,6 +11,7 @@ import { FunctionComponent } from "preact"
 type NavbarProps = {
     setSearchAndBackBtn: boolean;
     isSticky: boolean;
+    setCartBtn:boolean;
   }
 export const Navbar:FunctionComponent<NavbarProps> = (props) =>{
     const [toggle, setToggle] = useState(false)
@@ -18,7 +19,7 @@ export const Navbar:FunctionComponent<NavbarProps> = (props) =>{
 
     return(
         <>
-            <nav className={`w-full bg-white h-20 flex justify-between px-5 items-center border-b border-gray-200 ${props.isSticky?"sticky z-40 top-0":""}`}>
+            <nav className={`w-full bg-white h-20 flex $ ${props.setCartBtn?'justify-between':'gap-x-5'} px-5 items-center border-b border-gray-200 ${props.isSticky?"sticky z-40 top-0":""}`}>
                 {
                     props.setSearchAndBackBtn ?
                     <div className="menu-toggle flex justify-center items-center bg-[#f0f2f5] rounded-full size-10">
@@ -39,7 +40,7 @@ export const Navbar:FunctionComponent<NavbarProps> = (props) =>{
                         <img className="size-5" onClick={() => ''} src={searchIcon} alt="" />
                     </div> : ('')
                     }
-                    <div>
+                    <div className={`${props.setCartBtn?'block':'hidden'}`}>
                         <span className="flex justify-center items-center bg-orange-600 text-white text-xs size-4 rounded-full absolute top-4 right-4">2</span>
                         <div className="cart flex justify-center items-center bg-[#f0f2f5] rounded-full size-10">
                             <img onClick={() => setCartCaro(!cartCaro)} src={cartIcon} alt="" />

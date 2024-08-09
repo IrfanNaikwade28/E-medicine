@@ -51,7 +51,7 @@ export const LabTest = () => {
             placeholder="Search "
           />
           <div
-            className={`text-gray-400 absolute left-[4.5rem] ${
+            className={`text-gray-400 absolute left-[4rem] ${
               hide ? "hidden" : ""
             }`}
           >

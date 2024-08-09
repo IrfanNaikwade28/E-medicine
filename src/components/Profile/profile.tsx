@@ -1,10 +1,16 @@
-
+import { Navbar } from "../navbar"
+import { LoginSect } from "../loginSect"
+import { ProfileMenu } from "../profileMenu"
+import { SettingMenu } from "../settingMenu"
+import { Footer } from "../footer"
 export const Profile = () =>{
     return (
         <>
-             <div className="w-full h-screen">
-                Profile Page
-            </div>
+            <Navbar isSticky={true} setSearchAndBackBtn={false} setCartBtn={false}/>
+            <LoginSect/>
+            <ProfileMenu/>
+            <SettingMenu/>
+            <Footer/>
         </>
     )
 }

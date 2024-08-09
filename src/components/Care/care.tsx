@@ -9,7 +9,7 @@ import { FloatingSubscriptionBar } from "../floatingSubscriptionBar"
 export const Care = () =>{
     return (
         <>
-            <Navbar setSearchAndBackBtn={true} isSticky={true}/>
+            <Navbar setCartBtn={true} setSearchAndBackBtn={true} isSticky={true}/>
             <CarePlan/>
             <CarePlanCardContainer/>
             <CustomerCount/>

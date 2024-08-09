@@ -13,7 +13,7 @@ import { Footer } from "../footer"
 export const Lab = () =>{
     return (
         <>
-            <Navbar setSearchAndBackBtn={false} isSticky={true} />
+            <Navbar setCartBtn={true} setSearchAndBackBtn={false} isSticky={true} />
             <Header setSerachBarIsVisible={false}  />
             <LabTest/>
             <LabPackages/>

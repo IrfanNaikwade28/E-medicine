@@ -6,7 +6,7 @@ export const Health = () =>{
     return (
         <>
             <div className="w-full">
-                <Navbar setSearchAndBackBtn={true} isSticky={true}/>
+                <Navbar setCartBtn={true} setSearchAndBackBtn={true} isSticky={true}/>
                 <Header setSerachBarIsVisible={false} />
                 <HealthPlans/>
                 <Footer/>
