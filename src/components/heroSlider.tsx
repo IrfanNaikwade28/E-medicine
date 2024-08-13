@@ -28,10 +28,11 @@ export const HeroSlider:FunctionComponent<SliderImg> = ({HeroImages}) =>{
                     ))}
                     </div>
                     <div className="flex gap-3">
-                        <div className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==0?"bg-orange-600":"bg-gray-300 "}`}></div>
-                        <div className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==1?"bg-orange-600":"bg-gray-300 "}`}></div>
-                        <div className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==2?"bg-orange-600":"bg-gray-300 "}`}></div>
-                        <div className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==3?"bg-orange-600":"bg-gray-300 "}`}></div>
+                        {
+                            HeroImages.map((_,index)=>(
+                                <div key={index} className={`rounded-full w-2 h-2 cursor-pointer ${imgIndex==index?"bg-orange-600":"bg-gray-300 "}`}></div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

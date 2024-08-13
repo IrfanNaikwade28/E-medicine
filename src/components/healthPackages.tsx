@@ -16,7 +16,7 @@ import img4 from "../assets/98503b87-dd2e-4d92-903b-c6ae4890bd5f_1721396402.png"
 import { useState } from "preact/hooks"
 import { HeroSlider } from "./heroSlider"
 export const HealthPackages = () =>{
-    const healthPackage = [img1,img2,img3,img4]
+    const healthPackage = [img1,img2,img3,img4,img3]
     const [healthPack,setHealthPack] = useState("For Women")
     return (
         <>
