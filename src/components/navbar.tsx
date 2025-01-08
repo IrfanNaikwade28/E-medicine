@@ -7,6 +7,7 @@ import searchIcon from "../assets/icons/search.svg"
 import { NavbarToggle } from "./navbarToggle"
 import { CartCarousel } from "./cartCarousel"
 import { FunctionComponent } from "preact"
+import logo from "../assets/icons/logo.png"
 
 type NavbarProps = {
     setSearchAndBackBtn: boolean;
@@ -31,8 +32,8 @@ export const Navbar:FunctionComponent<NavbarProps> = (props) =>{
                         <img onClick={() => setToggle(!toggle)} src={menuIcon} alt="" />
                     </div>
                 }
-                <div className="logo">
-                    <span className="text-orange-500">LOGO</span>
+                <div className="logo flex justify-center">
+                    <img className="w-[8rem]" src={logo} alt="" />
                 </div>
                 <div className="flex gap-x-2">
                    {props.setSearchAndBackBtn ? 
